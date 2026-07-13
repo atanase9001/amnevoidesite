@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Site-uri rapide, curate și clare pentru firme mici. Vezi varianta de lucru înainte de plată și alege pachetul potrivit." />
+        <title>amnevoidesite.ro</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="site-header" id="top">
+            <div class="topbar">
+                <div class="container topbar-inner">
+                    <div class="topbar-dropdown">
+                        <button
+                            class="topbar-trigger"
+                            type="button"
+                            data-dropdown-trigger="supportMenu"
+                            aria-expanded="false"
+                            aria-controls="supportMenu">
+                            Support
+                            <span class="topbar-caret"></span>
+                        </button>
+
+                        <div class="topbar-menu topbar-menu-small"
+                            id="supportMenu">
+                            <a href="#beneficii">Beneficii</a>
+                            <a href="#preturi">Pachete</a>
+                            <a href="#proces">Proces</a>
+                            <a href="#intrebari">Întrebări</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+
+                    <div class="topbar-dropdown">
+                        <button
+                            class="topbar-trigger"
+                            type="button"
+                            data-dropdown-trigger="languageMenu"
+                            aria-expanded="false"
+                            aria-controls="languageMenu">
+                            <span class="topbar-flag">🇷🇴</span>
+                            Română
+                            <span class="topbar-caret"></span>
+                        </button>
+
+                        <div class="topbar-menu topbar-menu-large"
+                            id="languageMenu">
+                            <div class="topbar-search">
+                                <input type="text" id="languageSearch"
+                                    placeholder="Caută limba" />
+                            </div>
+
+                            <div class="language-grid">
+                                <button type="button"
+                                    class="language-item is-active"
+                                    data-lang="Română">🇷🇴 Română</button>
+                                <button type="button" class="language-item"
+                                    data-lang="English">🇬🇧 English</button>
+                                <button type="button" class="language-item"
+                                    data-lang="Deutsch">🇩🇪 Deutsch</button>
+                                <button type="button" class="language-item"
+                                    data-lang="Español">🇪🇸 Español</button>
+                                <button type="button" class="language-item"
+                                    data-lang="Français">🇫🇷 Français</button>
+                                <button type="button" class="language-item"
+                                    data-lang="Italiano">🇮🇹 Italiano</button>
+                                <button type="button" class="language-item"
+                                    data-lang="Magyar">🇭🇺 Magyar</button>
+                                <button type="button" class="language-item"
+                                    data-lang="Polski">🇵🇱 Polski</button>
+                                <button type="button" class="language-item"
+                                    data-lang="Svenska">🇸🇪 Svenska</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="topbar-dropdown">
+                        <button
+                            class="topbar-trigger"
+                            type="button"
+                            data-dropdown-trigger="currencyMenu"
+                            aria-expanded="false"
+                            aria-controls="currencyMenu">
+                            EUR
+                            <span class="topbar-caret"></span>
+                        </button>
+
+                        <div class="topbar-menu topbar-menu-currency"
+                            id="currencyMenu">
+                            <button type="button" class="currency-item">USD
+                                ($)</button>
+                            <button type="button"
+                                class="currency-item is-active">EUR (€)</button>
+                            <button type="button" class="currency-item">RON
+                                (lei)</button>
+                            <button type="button" class="currency-item">GBP
+                                (£)</button>
+                            <button type="button" class="currency-item">PLN
+                                (zł)</button>
+                            <button type="button" class="currency-item">SEK
+                                (kr)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container header-inner">
+                <a href="#top" class="brand">
+                    <img src="logo.png" alt="amnevoidesite.ro logo"
+                        class="brand-logo" />
+                    <span>amnevoidesite</span>
+                </a>
+
+                <nav class="main-nav" aria-label="Navigație principală">
+                    <a href="#beneficii">Beneficii</a>
+                    <a href="#preturi">Pachete</a>
+                    <a href="#proces">Proces</a>
+                    <a href="#intrebari">Întrebări</a>
+                    <a href="#contact" class="nav-cta">Contact</a>
+                </nav>
+
+                <button
+                    class="menu-toggle"
+                    type="button"
+                    aria-label="Deschide meniul"
+                    aria-expanded="false"
+                    aria-controls="mobileNav">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="mobile-nav" id="mobileNav">
+                <a href="#beneficii">Beneficii</a>
+                <a href="#preturi">Pachete</a>
+                <a href="#proces">Proces</a>
+                <a href="#intrebari">Întrebări</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container hero-grid">
+                    <div class="hero-copy reveal">
+                        <p class="eyebrow">Site-uri pentru firme mici</p>
+                        <h1>Site-uri clare pentru firme mici.</h1>
+                        <p class="hero-text">
+                            Facem site-uri rapide, curate și bine structurate
+                            pentru afaceri care vor să arate serios online. Vezi
+                            varianta de lucru înainte de plată, apoi decizi dacă
+                            mergem mai departe.
+                        </p>
+
+                        <ul class="hero-list">
+                            <li>Livrare rapidă pentru proiectele mici</li>
+                            <li>Preț clar stabilit de la început</li>
+                            <li>Design făcut pentru mobil și desktop</li>
+                        </ul>
+
+                        <div class="hero-actions">
+                            <a href="#preturi" class="btn btn-primary">Vezi
+                                pachetele</a>
+                            <a href="#contact" class="btn btn-secondary">Cere o
+                                ofertă</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual reveal"
+                        aria-label="Previzualizare site">
+                        <div class="visual-frame">
+                            <div class="visual-glow"></div>
+
+                            <div class="visual-card visual-card-main">
+                                <div class="visual-tag">Homepage</div>
+                                <h2>Prezentare clară pentru afacerea ta</h2>
+                                <p>Servicii, contact, formulare și structură
+                                    bună pentru încredere și conversii.</p>
+                            </div>
+
+                            <div
+                                class="visual-card visual-card-small visual-card-top">
+                                <strong>Mobil</strong>
+                                <span>rapid și aerisit</span>
+                            </div>
+
+                            <div
+                                class="visual-card visual-card-small visual-card-bottom">
+                                <strong>Contact</strong>
+                                <span>apel, WhatsApp, formular</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats-section" aria-labelledby="stats-title">
+                <div class="container">
+                    <div class="stats-head reveal">
+                        <p class="stats-kicker">De ce contează</p>
+                        <h2 id="stats-title">Chiar am nevoie de un site?</h2>
+                    </div>
+
+                    <div class="stats-grid">
+                        <article class="stat-item reveal">
+                            <div class="stat-number">62%</div>
+                            <p class="stat-text">Din consumatori ignoră complet
+                                o afacere dacă nu o găsesc pe internet.</p>
+                        </article>
+
+                        <article class="stat-item reveal">
+                            <div class="stat-number">72%</div>
+                            <p class="stat-text">Din firmele românești au un
+                                nivel de digitalizare aproape zero.</p>
+                        </article>
+
+                        <article class="stat-item reveal">
+                            <div class="stat-number">84%</div>
+                            <p class="stat-text">Consideră un site propriu mai
+                                de încredere decât o pagină de Facebook.</p>
+                        </article>
+
+                        <article class="stat-item reveal">
+                            <div class="stat-number">57%</div>
+                            <p class="stat-text">Refuză să recomande o afacere
+                                dacă site-ul de mobil se mișcă prost.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section benefits-section" id="beneficii">
+                <div class="container">
+                    <div class="benefits-intro reveal">
+                        <div class="benefits-head">
+                            <p class="eyebrow">Beneficii</p>
+                            <h2>De ce ne aleg firmele mici.</h2>
+                        </div>
+
+                        <p class="benefits-lead">
+                            Un site bun explică rapid ce faci, inspiră încredere
+                            și reduce fricțiunea până la contact.
+                        </p>
+                    </div>
+
+                    <div class="benefits-grid">
+                        <article class="benefit-card benefit-card-tall reveal">
+                            <div class="benefit-visual benefit-visual-orbit">
+                                <span class="orbit-center">Mesaj clar</span>
+                                <span
+                                    class="orbit-chip orbit-chip-a">Servicii</span>
+                                <span
+                                    class="orbit-chip orbit-chip-b">Contact</span>
+                                <span
+                                    class="orbit-chip orbit-chip-c">Mobil</span>
+                            </div>
+                            <h3>Prezentare clară din prima</h3>
+                            <p>Oamenii înțeleg repede cu ce te ocupi și cum pot
+                                lua legătura cu tine.</p>
+                        </article>
+
+                        <article class="benefit-card reveal">
+                            <div class="benefit-visual benefit-visual-glow">
+                                <div class="glow-tile">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <h3>Design coerent</h3>
+                            <p>Site-ul nu arată generic. Structura și tonul sunt
+                                aliniate cu serviciile tale.</p>
+                        </article>
+
+                        <article class="benefit-card benefit-card-tall reveal">
+                            <div class="benefit-visual benefit-visual-stack">
+                                <div class="stack-window"></div>
+                                <div
+                                    class="stack-chip stack-chip-top">Telefon</div>
+                                <div
+                                    class="stack-chip stack-chip-middle">WhatsApp</div>
+                                <div
+                                    class="stack-chip stack-chip-bottom">Formular</div>
+                            </div>
+                            <h3>Contact mai simplu</h3>
+                            <p>Pui toate punctele de contact într-o structură
+                                simplă, fără să trimiți omul să caute.</p>
+                        </article>
+
+                        <article class="benefit-card reveal">
+                            <div class="benefit-visual benefit-visual-flow">
+                                <div class="flow-icon">⚡</div>
+                                <div class="flow-pill">Rapid de deschis</div>
+                            </div>
+                            <h3>Bun și pe mobil</h3>
+                            <p>Pagina se mișcă bine pe telefon și nu pierde
+                                oamenii din cauza unei experiențe greoaie.</p>
+                        </article>
+
+                        <article class="benefit-card reveal">
+                            <div class="benefit-visual benefit-visual-list">
+                                <div class="list-screen">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="list-badge">Feedback aplicat</div>
+                            </div>
+                            <h3>Proces simplu</h3>
+                            <p>Trimiți materialele, vezi propunerea și ceri
+                                schimbări înainte de lansare.</p>
+                        </article>
+
+                        <article class="benefit-card reveal">
+                            <div class="benefit-visual benefit-visual-tag">
+                                <div class="price-tag">
+                                    <span>Preț clar</span>
+                                </div>
+                            </div>
+                            <h3>Cost previzibil</h3>
+                            <p>Primești un preț comunicat de la început, fără
+                                surprize inutile.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section pricing-section" id="preturi">
+                <div class="container">
+                    <div class="pricing-head reveal">
+                        <div class="pricing-head-copy">
+                            <p class="eyebrow">Pachete</p>
+                            <h2>Pachete simple și clare.</h2>
+                        </div>
+                    </div>
+
+                    <div class="pricing-grid">
+                        <article class="pricing-card reveal">
+                            <div class="pricing-card-inner">
+                                <p class="pricing-kicker">Starter</p>
+                                <h3>Basic</h3>
+
+                                <div class="pricing-price">
+                                    <span class="pricing-amount">€79</span>
+                                    <span class="pricing-note">o singură
+                                        plată</span>
+                                </div>
+
+                                <p class="pricing-copy">
+                                    Pentru firme care au nevoie rapid de o
+                                    pagină clară, cu informațiile esențiale.
+                                </p>
+
+                                <ul class="pricing-list">
+                                    <li>1 pagină de prezentare</li>
+                                    <li>Structură clară pentru servicii</li>
+                                    <li>Secțiune de contact</li>
+                                    <li>Optimizare de bază pentru mobil</li>
+                                    <li>2 rundă de feedback</li>
+                                </ul>
+
+                                <a href="#contact"
+                                    class="pricing-button pricing-button-light">Aleg
+                                    Basic</a>
+                            </div>
+                        </article>
+
+                        <article
+                            class="pricing-card pricing-card-featured reveal">
+                            <div class="pricing-popular">Cel mai ales</div>
+
+                            <div
+                                class="pricing-card-inner pricing-card-inner-dark">
+                                <h3>Pro</h3>
+
+                                <div class="pricing-price pricing-price-dark">
+                                    <span class="pricing-amount">€139</span>
+                                    <span class="pricing-note">o singură
+                                        plată</span>
+                                </div>
+
+                                <p class="pricing-copy pricing-copy-dark">
+                                    Pentru firme care vor un site mai solid, mai
+                                    credibil și mai complet decât o simplă carte
+                                    de vizită online.
+                                </p>
+
+                                <ul class="pricing-list pricing-list-dark">
+                                    <li>Până la 5 secțiuni sau pagini
+                                        scurte</li>
+                                    <li>Design personalizat</li>
+                                    <li>Formular + WhatsApp + apel</li>
+                                    <li>Layout foarte bun pe mobil</li>
+                                    <li>Setări de bază pentru indexare</li>
+                                    <li>Feedback nelimitat</li>
+                                </ul>
+
+                                <a href="#contact"
+                                    class="pricing-button pricing-button-gradient">Aleg
+                                    Pro</a>
+                            </div>
+                        </article>
+
+                        <article class="pricing-card reveal">
+                            <div class="pricing-card-inner">
+                                <p class="pricing-kicker">Enterprise</p>
+                                <h3>Signature</h3>
+
+                                <div class="pricing-price">
+                                    <span class="pricing-amount">€449</span>
+                                    <span class="pricing-note">o singură
+                                        plată</span>
+                                </div>
+
+                                <p class="pricing-copy">
+                                    Pentru proiecte ample care au nevoie de
+                                    structură extinsă, direcție vizuală și
+                                    execuție mai complexă.
+                                </p>
+
+                                <ul class="pricing-list">
+                                    <li>Arhitectură extinsă de conținut</li>
+                                    <li>Mai multe tipuri de pagini</li>
+                                    <li>Direcție vizuală completă</li>
+                                    <li>Secțiuni custom mai complexe</li>
+                                    <li>Suport de implementare extins</li>
+                                    <li>Prioritate la feedback</li>
+                                </ul>
+
+                                <a href="#contact"
+                                    class="pricing-button pricing-button-light">Discut
+                                    proiectul</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="proces">
+                <div class="container process-layout">
+                    <div class="process-copy reveal">
+                        <p class="eyebrow">Proces</p>
+                        <h2>Pași scurți, fără complicații.</h2>
+                        <p>
+                            Ne trimiți materialele, facem varianta de lucru,
+                            aplicăm feedback-ul și publicăm când totul este
+                            pregătit.
+                        </p>
+                    </div>
+
+                    <div class="process-steps">
+                        <article class="step-card reveal">
+                            <span class="step-no">01</span>
+                            <div>
+                                <h3>Trimiți materialele</h3>
+                                <p>Logo, texte, imagini, servicii și datele de
+                                    contact.</p>
+                            </div>
+                        </article>
+
+                        <article class="step-card reveal">
+                            <span class="step-no">02</span>
+                            <div>
+                                <h3>Primești varianta de lucru</h3>
+                                <p>Îți arătăm site-ul înainte de plată și notăm
+                                    clar ce vrei schimbat.</p>
+                            </div>
+                        </article>
+
+                        <article class="step-card reveal">
+                            <span class="step-no">03</span>
+                            <div>
+                                <h3>Lansăm după aprobare</h3>
+                                <p>Facem ultimele ajustări și publicăm site-ul
+                                    când totul este gata.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section faq-section" id="intrebari">
+                <div class="container">
+                    <div class="section-head faq-head reveal">
+                        <p class="eyebrow">Întrebări</p>
+                        <h2>Ce întreabă lumea cel mai des.</h2>
+                    </div>
+
+                    <div class="faq faq-stack reveal">
+                        <details>
+                            <summary>Cât durează?</summary>
+                            <p>Un site mic sau mediu durează de obicei între una
+                                și cinci zile, în funcție de conținut și
+                                feedback.</p>
+                        </details>
+
+                        <details>
+                            <summary>Ce se întâmplă dacă vreau
+                                schimbări?</summary>
+                            <p>Le facem înainte de lansare. Lucrăm pe feedback
+                                și ajustăm varianta până când totul este
+                                clar.</p>
+                        </details>
+
+                        <details>
+                            <summary>Trebuie să plătesc înainte?</summary>
+                            <p>Nu pentru discuția inițială. Vezi mai întâi
+                                propunerea și apoi decizi dacă mergem mai
+                                departe.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section" id="contact">
+                <div class="container contact-grid">
+                    <div class="contact-copy reveal">
+                        <p class="eyebrow">Contact</p>
+                        <h2>Vrei un site care îți va aduce clienți?</h2>
+                        <p>
+                            Trimite câteva detalii despre afacerea ta și revenim
+                            cu o propunere clară.
+                        </p>
+                    </div>
+
+                    <form class="contact-form reveal" action="#" method="post">
+                        <div class="field-row">
+                            <label for="nume">Nume</label>
+                            <input id="nume" name="nume" type="text"
+                                placeholder="Numele tău" required />
+                        </div>
+
+                        <div class="field-row">
+                            <label for="telefon">Telefon</label>
+                            <input id="telefon" name="telefon" type="tel"
+                                placeholder="07xxxxxxxx" required />
+                        </div>
+
+                        <div class="field-row">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email"
+                                placeholder="nume@email.ro" required />
+                        </div>
+
+                        <div class="field-row">
+                            <label for="detalii">Detalii despre site</label>
+                            <textarea
+                                id="detalii"
+                                name="detalii"
+                                placeholder="Spune-ne cu ce se ocupă afacerea ta și ce fel de site vrei."
+                                required></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit"
+                                class="btn btn-primary">Trimite cererea</button>
+
+                            <a
+                                href="https://wa.me/40700000000"
+                                class="button2"
+                                target="_blank"
+                                rel="noopener"
+                                aria-label="Scrie-ne pe WhatsApp">
+                                <span class="button2-label">WhatsApp</span>
+                                <svg viewBox="0 0 48 48"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"
+                                        fill="#fff"></path>
+                                    <path
+                                        d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"
+                                        fill="#fff"></path>
+                                    <path
+                                        d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"
+                                        fill="#cfd8dc"></path>
+                                    <path
+                                        d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"
+                                        fill="#40c351"></path>
+                                    <path clip-rule="evenodd"
+                                        d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                                        fill="#fff" fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <p>© 2026 amnevoidesite.ro</p>
+                <div class="footer-links">
+                    <a href="https://anpc.ro" target="_blank"
+                        rel="noopener">ANPC</a>
+                    <a href="https://ec.europa.eu/consumers/odr" target="_blank"
+                        rel="noopener">SAL / SOL</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
