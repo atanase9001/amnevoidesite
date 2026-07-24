@@ -1,0 +1,1453 @@
+:root {
+    --primary-blue: #0066FF;
+    --dark-blue: #0A192F;
+    --light-blue: #E6F0FF;
+    --accent-blue: #00A3FF;
+    --hover-blue: #0052CC;
+    --dark-text: #0f172a;
+    --text-main: #1e293b;
+    --text-light: #334155;
+    --white: #ffffff;
+
+    /* Fonturi combinate */
+    --font-heading: 'Cabinet Grotesk', system-ui, sans-serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--text-main);
+    background-color: #ffffff;
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+/* Aplicare font de titlu pe toate headerele și butoanele */
+h1, h2, h3, h4, .logo, .btn-blue, .btn-submit, .btn-hero-appointment, .btn-header-email, .section-badge, .badge, .booking-title, summary {
+    font-family: var(--font-heading);
+}
+
+/* --- HEADER & NAV --- */
+header {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--dark-blue);
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.logo:hover {
+    opacity: 0.85;
+}
+
+.logo i {
+    color: var(--primary-blue);
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-blue);
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.contact-info-small {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--dark-blue);
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.contact-info-small:hover {
+    background-color: var(--light-blue);
+}
+
+.contact-info-small i {
+    color: var(--primary-blue);
+    font-size: 22px;
+}
+
+.contact-label {
+    font-size: 12px;
+    color: var(--text-light);
+}
+
+.btn-header-email {
+    background-color: var(--light-blue);
+    color: var(--primary-blue);
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+}
+
+.btn-header-email:hover {
+    background-color: #d0e2ff;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    position: relative;
+    background: linear-gradient(90deg, rgba(10, 25, 47, 0.95) 0%, rgba(10, 25, 47, 0.78) 100%), 
+                url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    padding: 80px 24px;
+}
+
+.hero-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-subtitle {
+    color: var(--accent-blue);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.15;
+    margin-bottom: 28px;
+    font-weight: 800;
+}
+
+.btn-hero-appointment {
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--dark-blue);
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: none;
+    margin-bottom: 32px;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.btn-hero-appointment:hover {
+    background-color: var(--light-blue);
+    transform: translateY(-2px);
+}
+
+.hero-btn-icon {
+    font-size: 13px;
+    margin-left: 6px;
+}
+
+.hero-text-secondary {
+    color: #e2e8f0;
+    max-width: 480px;
+    font-size: 17px;
+    line-height: 1.65;
+    margin-bottom: 18px;
+}
+
+.explore-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s;
+}
+
+.explore-link:hover {
+    color: var(--accent-blue);
+}
+
+/* --- FORM CARD --- */
+.booking-card {
+    background-color: var(--white);
+    border-radius: 16px;
+    padding: 40px 36px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+    color: var(--text-main);
+}
+
+.booking-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+    color: var(--dark-blue);
+    font-weight: 800;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    background-color: #f8fafc;
+    color: var(--dark-text);
+    font-family: var(--font-body);
+    transition: border 0.3s;
+}
+
+.form-control:focus {
+    border-color: var(--primary-blue);
+    background-color: var(--white);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--hover-blue);
+}
+
+/* --- COMMON BLUE ELEMENTS --- */
+.btn-blue {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 15px 28px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-blue:hover {
+    background-color: var(--hover-blue);
+    transform: translateY(-2px);
+}
+
+.section-badge {
+    color: var(--primary-blue);
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.text-blue {
+    color: var(--primary-blue);
+}
+
+/* --- SERVICES SECTION --- */
+.services-section {
+    max-width: 1280px;
+    margin: 100px auto;
+    padding: 0 24px;
+}
+
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.services-header h2 {
+    font-size: 44px;
+    color: var(--dark-blue);
+    font-weight: 800;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    padding: 40px 30px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+    transition: all 0.3s ease;
+}
+
+.service-card.highlight {
+    background-color: var(--light-blue);
+    border: 1px solid #bfdbfe;
+}
+
+.service-card .icon-circle {
+    width: 88px;
+    height: 88px;
+    border-radius: 50% 50% 50% 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: var(--primary-blue);
+    margin-bottom: 28px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.service-card h3 {
+    font-size: 23px;
+    color: var(--dark-blue);
+    margin-bottom: 16px;
+    font-weight: 800;
+}
+
+.service-card p {
+    color: var(--text-light);
+    font-size: 15px;
+    line-height: 1.65;
+    margin-bottom: 24px;
+}
+
+.service-link {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* --- GALLERY SECTION --- */
+.gallery-section {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 460px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.gallery-item:hover img {
+    filter: grayscale(0%);
+}
+
+.badge {
+    position: absolute;
+    top: 24px;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 15px;
+    z-index: 2;
+}
+
+.badge-before {
+    left: 24px;
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+}
+
+.badge-after {
+    right: 24px;
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+/* --- FAQ SECTION --- */
+.faq-section {
+    max-width: 1280px;
+    margin: 100px auto;
+    padding: 0 24px;
+}
+
+.faq-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.faq-info h2 {
+    font-size: 46px;
+    color: var(--dark-blue);
+    margin-bottom: 24px;
+    line-height: 1.18;
+    font-weight: 800;
+}
+
+.faq-info p {
+    color: var(--text-light);
+    margin-bottom: 36px;
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.faq-item {
+    background-color: var(--light-blue);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: all 0.3s;
+    border: 1px solid #bfdbfe;
+}
+
+.faq-item summary {
+    list-style: none;
+    font-weight: 700;
+    color: var(--dark-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    padding: 22px 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item p {
+    padding: 0 28px 24px 28px;
+    color: var(--text-light);
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.icon-toggle {
+    color: var(--primary-blue);
+    font-size: 16px;
+}
+
+/* --- APPOINTMENT CARD SECTION --- */
+
+
+
+
+.appointment-card h2 {
+    font-size: 36px;
+    color: var(--dark-blue);
+    margin-bottom: 32px;
+    font-weight: 800;
+}
+
+
+
+.app-form-row.full {
+    grid-template-columns: 1fr;
+}
+
+.app-form input, .app-form select {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    font-size: 15px;
+    outline: none;
+    color: var(--dark-text);
+    font-family: var(--font-body);
+}
+
+.btn-full {
+    width: 100%;
+    justify-content: center;
+    padding: 18px;
+    font-size: 18px;
+}
+
+.info-ticker {
+    margin-top: 80px;
+    background-color: var(--primary-blue);
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--white);
+    font-family: var(--font-heading);
+}
+
+.ticker-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--dark-blue);
+    color: #ffffff;
+    padding: 80px 24px 28px;
+}
+
+
+.footer-cta h2 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+
+.footer-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 48px;
+    margin-bottom: 70px;
+}
+
+.footer-logo {
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+
+.footer-col p {
+    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.65;
+    margin-bottom: 12px;
+}
+
+.footer-col h3 {
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 14px;
+}
+
+.footer-col ul a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.footer-col ul a:hover {
+    color: var(--accent-blue);
+}
+
+.footer-bottom {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    gap: 18px;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    z-index: 99;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+    .hero-container, .faq-container, .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 40px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .services-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .info-ticker {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+
+/* --- STILURI PAGINA DESPRE NOI --- */
+
+/* Page Banner Top */
+.page-banner {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 45px 24px;
+    border-bottom: 3px solid var(--primary-blue);
+}
+
+.page-banner-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-banner h1 {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.breadcrumb {
+    font-size: 15px;
+    color: #94a3b8;
+}
+
+.breadcrumb a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    color: var(--accent-blue);
+    font-weight: 600;
+}
+
+/* Nav Active Link */
+nav a.active {
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+/* About Detail Section */
+.about-detail-section {
+    max-width: 1280px;
+    margin: 80px auto;
+    padding: 0 24px;
+}
+
+.about-detail-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    color: var(--dark-blue);
+    margin-bottom: 24px;
+    line-height: 1.25;
+    font-weight: 800;
+}
+
+.lead-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: var(--text-light);
+    font-size: 16px;
+}
+
+.service-list-block p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.service-list-block strong {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+/* Imagine cu cerculețe decorative */
+.about-image-wrapper {
+    position: relative;
+    padding: 15px;
+}
+
+.about-image-wrapper img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.dots-pattern {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-image: radial-gradient(#0066FF 2px, transparent 2px);
+    background-size: 12px 12px;
+    z-index: 1;
+}
+
+.dots-pattern.top-right {
+    top: -15px;
+    right: -15px;
+}
+
+.dots-pattern.bottom-left {
+    bottom: -15px;
+    left: -15px;
+}
+
+/* Secțiunea Certificate */
+.certificates-section {
+    background-color: #f8fafc;
+    padding: 90px 24px;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.certificates-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.certificates-container h2 {
+    font-size: 34px;
+    color: var(--dark-blue);
+    margin-bottom: 24px;
+    font-weight: 800;
+}
+
+.certificates-container p {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 18px;
+    max-width: 1000px;
+}
+
+.coverage-text {
+    background-color: var(--light-blue);
+    padding: 16px 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-blue);
+    color: var(--dark-blue) !important;
+    margin-top: 25px;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.cert-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+}
+
+.cert-card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* --- MEGA CONTACT BANNER (BUTON MARE) --- */
+.mega-contact-section {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, #06101e 100%);
+    color: #ffffff;
+    padding: 100px 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.mega-contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.mega-badge {
+    display: inline-block;
+    background-color: rgba(0, 102, 255, 0.2);
+    color: var(--accent-blue);
+    border: 1px solid var(--primary-blue);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.mega-contact-container h2 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 18px;
+    line-height: 1.15;
+}
+
+.mega-contact-container p {
+    font-size: 19px;
+    color: #cbd5e1;
+    margin-bottom: 45px;
+}
+
+.mega-btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Butonul Gigant de Apel */
+.btn-mega-call {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    padding: 22px 42px;
+    border-radius: 16px;
+    text-decoration: none;
+    box-shadow: 0 12px 35px rgba(0, 102, 255, 0.45);
+    transition: all 0.3s ease;
+    border: 2px solid #3385ff;
+}
+
+.btn-mega-call:hover {
+    background-color: var(--hover-blue);
+    transform: translateY(-4px);
+    box-shadow: 0 18px 45px rgba(0, 102, 255, 0.6);
+}
+
+.btn-mega-call i {
+    font-size: 38px;
+    color: #ffffff;
+}
+
+.mega-call-text {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.mega-call-text span {
+    font-size: 12px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    font-family: var(--font-heading);
+}
+
+.mega-call-text strong {
+    font-size: 28px;
+    font-weight: 800;
+    font-family: var(--font-heading);
+    line-height: 1.1;
+}
+
+/* Buton Secundar WhatsApp */
+.btn-mega-wa {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    padding: 24px 32px;
+    border-radius: 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+}
+
+.btn-mega-wa:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+    border-color: #ffffff;
+}
+
+.btn-mega-wa i {
+    color: #25D366;
+    font-size: 24px;
+}
+
+/* Animație Pulse pentru Icon-ul de Apel */
+@keyframes pulse-icon {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+.icon-pulse {
+    animation: pulse-icon 2s infinite ease-in-out;
+}
+
+/* Responsive pentru pagina Despre */
+@media (max-width: 992px) {
+    .about-detail-container {
+        grid-template-columns: 1fr;
+    }
+
+    .page-banner-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .mega-contact-container h2 {
+        font-size: 34px;
+    }
+
+    .btn-mega-call {
+        width: 100%;
+        justify-content: center;
+        padding: 18px 24px;
+    }
+
+    .mega-call-text strong {
+        font-size: 22px;
+    }
+
+    .btn-mega-wa {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* --- STILURI PAGINA SERVICII (GRILE CU IMAGINI) --- */
+.all-services-section {
+    max-width: 1280px;
+    margin: 60px auto 100px;
+    padding: 0 24px;
+}
+
+.service-category {
+    margin-bottom: 70px;
+}
+
+.category-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--dark-blue);
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--light-blue);
+    padding-bottom: 12px;
+}
+
+.services-grid-page {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+.service-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+}
+
+.service-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.service-box:hover .service-img img {
+    transform: scale(1.05);
+}
+
+.service-box h3 {
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--dark-blue);
+    line-height: 1.35;
+    max-width: 240px;
+}
+
+/* Responsive Grilă Servicii */
+@media (max-width: 1024px) {
+    .services-grid-page {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .services-grid-page {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-img {
+        height: 220px;
+    }
+}
+
+/* --- STILURI PAGINA PROIECTE / PORTOFOLIU --- */
+.projects-page-section {
+    max-width: 1280px;
+    margin: 70px auto 100px;
+    padding: 0 24px;
+}
+
+.projects-header-text {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.projects-header-text h2 {
+    font-size: 42px;
+    color: var(--dark-blue);
+    font-weight: 800;
+    margin-top: 5px;
+}
+
+/* Butoane de Filtrare */
+.portfolio-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: none;
+    color: var(--text-main);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 22px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    color: var(--primary-blue);
+    background-color: var(--light-blue);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(0, 102, 255, 0.3);
+}
+
+/* Grila cu Carduri de Proiect */
+.projects-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.project-card-item {
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-img-box {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: var(--dark-blue);
+}
+
+.project-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Overlay Albastru la Hover */
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.92) 0%, rgba(10, 25, 47, 0.95) 100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.overlay-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.overlay-icons .icon-btn {
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    color: var(--dark-blue);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.overlay-icons .icon-btn:hover {
+    transform: scale(1.1);
+    background-color: var(--light-blue);
+    color: var(--primary-blue);
+}
+
+.overlay-text {
+    color: #ffffff;
+}
+
+.project-cat {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.85;
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+.overlay-text h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 4px;
+    line-height: 1.3;
+}
+
+/* Efecte la Hover pe Card */
+.project-card-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-card-item:hover .project-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-card-item:hover .project-img-box img {
+    transform: scale(1.08);
+}
+
+/* Responsive Grilă Proiecte */
+@media (max-width: 1100px) {
+    .projects-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .projects-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-header-text h2 {
+        font-size: 32px;
+    }
+
+    .project-img-box {
+        height: 280px;
+    }
+}
+
+/* --- FIX 1: Offset pentru Anchor Links (#faq, #contact, #servicii etc.) --- */
+/* Previne acoperirea titlurilor de către header-ul sticky */
+section[id], 
+footer[id], 
+div[id] {
+    scroll-margin-top: 110px;
+}
+
+
+/* --- FIX 2: Spațiere Header & Meniu --- */
+.header-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 18px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px; /* Oferă spațiu aerisit între logo, nav și zona de telefon */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--dark-blue);
+    text-decoration: none;
+    transition: opacity 0.2s;
+    flex-shrink: 0; /* Previne strângerea logo-ului */
+}
+
+/* Centrează meniul între logo și zona de contact */
+nav {
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 28px; /* Spațiu optim între link-urile din meniu */
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 16px;
+    white-space: nowrap; /* Previne ruperea textului pe 2 rânduri */
+    transition: color 0.3s;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0; /* Previne strângerea zonei de contact */
+}
+
+/* Previne acoperirea secțiunilor de către header-ul sticky */
+section[id],
+footer[id],
+div[id] {
+    scroll-margin-top: 100px;
+}
+
+/* --- FIX TICKER FULL-WIDTH & LIPIT DE FOOTER --- */
+.mega-contact-section {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, #06101e 100%);
+    color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 0; /* Elimină spațiul dintre ticker și footer */
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.mega-contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px; /* Păstrează spațierea doar pentru conținutul de sus */
+    position: relative;
+    z-index: 2;
+}
+
+.info-ticker {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 0;
+    background-color: var(--primary-blue);
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--white);
+    font-family: var(--font-heading);
+}
+
+footer {
+    margin-top: 0;
+}

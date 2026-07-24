@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiecte & Lucrări Recente | PlumbExpert</title>
+    <!-- Cabinet Grotesk (Titluri) + Plus Jakarta Sans (Corp text) -->
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Extern -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-faucet-drip"></i>
+                <span>PlumbExpert</span>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="despre.html">Despre Noi</a></li>
+                    <li><a href="servicii.html">Servicii</a></li>
+                    <li><a href="proiecte.html" class="active">Proiecte</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-contact">
+                <a href="tel:+40712345678" class="contact-info-small">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <div>
+                        <div class="contact-label">Ai nevoie de ajutor?</div>
+                        <strong>+40 712 345 678</strong>
+                    </div>
+                </a>
+                <a href="mailto:contact@plumbexpert.ro" class="btn-header-email">
+                    <i class="fa-regular fa-envelope"></i> contact@plumbexpert.ro
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="page-banner-container">
+            <h1>PROIECTE RECENTE</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <span>Proiecte</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secțiunea Portofoliu / Galerie Proiecte -->
+    <section class="projects-page-section">
+        <div class="projects-container">
+            
+            <div class="projects-header-text">
+                <span class="section-badge">PORTOFOLIU LUCRĂRI</span>
+                <h2>Explorează Proiectele Noastre Recente</h2>
+            </div>
+
+            <!-- Filtre Categorie -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Toate Proiectele</button>
+                <button class="filter-btn" data-filter="sanitare">Sanitare</button>
+                <button class="filter-btn" data-filter="termice">Termice</button>
+                <button class="filter-btn" data-filter="gaze">Gaze</button>
+                <button class="filter-btn" data-filter="desfundari">Desfundări</button>
+            </div>
+
+            <!-- Grilă Carduri Proiecte (4 pe rând pe desktop) -->
+            <div class="projects-gallery-grid">
+                
+                <!-- Card 1 -->
+                <div class="project-card-item" data-category="sanitare">
+                    <div class="project-img-box">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop" alt="Montaj Instalație Baie">
+                        <div class="project-overlay">
+                            <div class="overlay-icons">
+                                <span class="icon-btn"><i class="fa-solid fa-expand"></i></span>
+                                <span class="icon-btn"><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="overlay-text">
+                                <span class="project-cat">Instalații Sanitare</span>
+                                <h3>Montaj Complet Baie & Sanitare</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="project-card-item" data-category="termice">
+                    <div class="project-img-box">
+                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=800&auto=format&fit=crop" alt="Montaj Centrală Termică">
+                        <div class="project-overlay">
+                            <div class="overlay-icons">
+                                <span class="icon-btn"><i class="fa-solid fa-expand"></i></span>
+                                <span class="icon-btn"><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="overlay-text">
+                                <span class="project-cat">Centrale & Termice</span>
+                                <h3>Înlocuire Centrală & Radiatoare</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="project-card-item" data-category="gaze">
+                    <div class="project-img-box">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop" alt="Proiectare Rețea Gaz">
+                        <div class="project-overlay">
+                            <div class="overlay-icons">
+                                <span class="icon-btn"><i class="fa-solid fa-expand"></i></span>
+                                <span class="icon-btn"><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="overlay-text">
+                                <span class="project-cat">Instalații Gaze</span>
+                                <h3>Execuție Rețea Gaze Bloc</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="project-card-item" data-category="sanitare">
+                    <div class="project-img-box">
+                        <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=800&auto=format&fit=crop" alt="Montaj Lavoar & Baterii">
+                        <div class="project-overlay">
+                            <div class="overlay-icons">
+                                <span class="icon-btn"><i class="fa-solid fa-expand"></i></span>
+                                <span class="icon-btn"><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="overlay-text">
+                                <span class="project-cat">Instalații Sanitare</span>
+                                <h3>Montaj Mobilier & Lavoar Baie</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="project-card-item" data-category="termice">
+                    <div class="project-img-box">
+                        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop" alt="Încălzire în Pardoseală">
+                        <div class="project-overlay">
+                            <div class="overlay-icons">
+                                <span class="icon-btn"><i class="fa-solid fa-expand"></i></span>
+                                <span class="icon-btn"><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="overlay-text">
+                                <span class="project-cat">Centrale & Termice</span>
+                                <h3>Sistem Încălzire în Pardoseală</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="project-card-item" data-category="desfundari">
+                    <div class="project-img-box">
+                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800&auto=format&fit=crop" alt="Desfundare Canalizare">
+                        <div class="project-overlay">
+                            <div class="overlay-icons">
+                                <span class="icon-btn"><i class="fa-solid fa-expand"></i></span>
+                                <span class="icon-btn"><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="overlay-text">
+                                <span class="project-cat">Desfundări</span>
+                                <h3>Desfundare Mecanizată Coloană</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="project-card-item" data-category="gaze">
+                    <div class="project-img-box">
+                        <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=800&auto=format&fit=crop" alt="Montaj Senzori Electrovană">
+                        <div class="project-overlay">
+                            <div class="overlay-icons">
+                                <span class="icon-btn"><i class="fa-solid fa-expand"></i></span>
+                                <span class="icon-btn"><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="overlay-text">
+                                <span class="project-cat">Instalații Gaze</span>
+                                <h3>Montaj Electrovalvă & Senzor Gaz</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="project-card-item" data-category="sanitare">
+                    <div class="project-img-box">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop" alt="Schimbare Robineți Generali">
+                        <div class="project-overlay">
+                            <div class="overlay-icons">
+                                <span class="icon-btn"><i class="fa-solid fa-expand"></i></span>
+                                <span class="icon-btn"><i class="fa-solid fa-link"></i></span>
+                            </div>
+                            <div class="overlay-text">
+                                <span class="project-cat">Instalații Sanitare</span>
+                                <h3>Înlocuire Robineți Generali Apă</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTIUNE BUTON MARE CONTACT (MEGA CONTACT) -->
+    <section class="mega-contact-section" id="contact">
+        <div class="mega-contact-container">
+            <span class="mega-badge"><i class="fa-solid fa-clock"></i> DISPONIBIL NON-STOP 24/7</span>
+            <h2>Ai o avarie sau o lucrare urgentă?</h2>
+            <p>Suntem pregătiți să intervenim în maxim 30-60 de minute în tot județul Ilfov și sectoarele 1-6.</p>
+
+            <div class="mega-btn-group">
+                <a href="tel:+40712345678" class="btn-mega-call">
+                    <i class="fa-solid fa-phone-volume icon-pulse"></i>
+                    <div class="mega-call-text">
+                        <span>SUNĂ ACUM PENTRU INTERVENȚIE</span>
+                        <strong>+40 712 345 678</strong>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/40712345678" class="btn-mega-wa" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Mesaj WhatsApp Rapid
+                </a>
+            </div>
+        </div>
+
+        <!-- Ticker Sub Contact -->
+        <div class="info-ticker">
+            <div class="ticker-item"><i class="fa-solid fa-bolt"></i> LUNI - VINERI: 09:00 - 18:00 | SÂMBĂTĂ: 09:00 -
+                16:00</div>
+            <div class="ticker-item"><i class="fa-solid fa-bolt"></i> BUCUREȘTI - STR. PRINCIPALĂ NR. 12</div>
+            <div class="ticker-item"><i class="fa-solid fa-bolt"></i> CONTACT - TELEFON: +40 712 345 678</div>
+            <div class="ticker-item"><i class="fa-solid fa-bolt"></i> DUMINICĂ: ÎNCHIS</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <a href="index.html" class="logo footer-logo">
+                <i class="fa-solid fa-faucet-drip text-blue"></i>
+                <span>PlumbExpert</span>
+            </a>
+            <p>Managementul instalațiilor sanitare include o gamă largă de activități și soluții moderne adaptate locuinței tale.</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Serviciile Noastre</h3>
+            <ul>
+                <li><a href="servicii.html">Țevi & Sisteme de Apă</a></li>
+                <li><a href="servicii.html">Reparații & Montaj Chiuvete</a></li>
+                <li><a href="servicii.html">Detectare & Reparat Scurgeri</a></li>
+                <li><a href="servicii.html">Montaj Sisteme Sanitare</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Informații Legale</h3>
+            <ul>
+                <li><a href="#">Termeni și Condiții</a></li>
+                <li><a href="#">Politica de Confidențialitate</a></li>
+                <li><a href="#">Politica de Cookie-uri</a></li>
+                <li><a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="nofollow">ANPC - SAL</a></li>
+                <li><a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="nofollow">ANPC - SOL</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Informații Contact</h3>
+            <p>Str. Principală nr. 12, București</p>
+            <p>+40 712 345 678</p>
+            <p>contact@plumbexpert.ro</p>
+            <p>Program: 08:00 - 23:00</p>
+            <p>Duminică - Închis</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright © 2026 PlumbExpert. Toate drepturile rezervate. | Site creat de <a href="https://amnevoiede.site" target="_blank" style="color: var(--accent-blue); text-decoration: none; font-weight: 700;">amnevoiede.site</a></p>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Script Filtrare Proiecte -->
+    <script>
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectItems = document.querySelectorAll('.project-card-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                projectItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

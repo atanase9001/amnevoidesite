@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalator Profesionist | Servicii Sanitare & Termice</title>
+    <!-- Cabinet Grotesk (Titluri) + Plus Jakarta Sans (Corp text) -->
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,700,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Extern -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-faucet-drip"></i>
+                <span>PlumbExpert</span>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Acasă</a></li>
+                    <li><a href="despre.html"> Despre Noi</a></li>
+                    <li><a href="servicii.html">Servicii</a></li>
+                    <li><a href="proiecte.html">Proiecte</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-contact">
+                <a href="tel:+40712345678" class="contact-info-small">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <div>
+                        <div class="contact-label">Ai nevoie de ajutor?</div>
+                        <strong>+40 712 345 678</strong>
+                    </div>
+                </a>
+                <a href="mailto:contact@plumbexpert.ro" class="btn-header-email">
+                    <i class="fa-regular fa-envelope"></i> contact@plumbexpert.ro
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <!-- Text stânga -->
+            <div class="hero-content">
+                <p class="hero-subtitle">Servicii Profesionale de Instalații</p>
+                <h1 class="hero-title">Instalații Sanitare & Termice pentru Casa Ta</h1>
+
+                <a href="#programeaza" class="btn-hero-appointment">
+                    Programează o Vizită <i class="fa-solid fa-chevron-right hero-btn-icon"></i>
+                </a>
+
+                <p class="hero-text-secondary">
+                    Oferim servicii rapide și de calitate superioară, cu garanție completă pentru toate lucrările
+                    executate de echipa noastră.
+                </p>
+
+                <a href="#servicii" class="explore-link">
+                    Află mai multe <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+            <!-- Card Formular dreapta -->
+            <div class="booking-card" id="programeaza">
+                <h2 class="booking-title">Programează o intervenție</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Numele tău" required>
+                    </div>
+
+                    <div class="form-group">
+                        <select class="form-control" required>
+                            <option value="" disabled selected>Alege serviciul</option>
+                            <option value="sanitare">Instalații Sanitare</option>
+                            <option value="termice">Centrală & Încălzire</option>
+                            <option value="urgente">Urgență / Desfundare</option>
+                            <option value="montaj">Montaj Obiecte Sanitare</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row form-group">
+                        <input type="date" class="form-control" required>
+                        <input type="time" class="form-control" required>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Trimite Solicitarea</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secțiunea Servicii -->
+    <section class="services-section" id="servicii">
+        <div class="services-header">
+            <div>
+                <span class="section-badge">Serviciile Noastre</span>
+                <h2>Soluții Experte de Instalații</h2>
+            </div>
+            <a href="#programeaza" class="btn-blue">
+                Programează o Vizită <i class="fa-solid fa-chevron-right"></i>
+            </a>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-pipes"></i>
+                </div>
+                <h3>Țevi & Sisteme de Apă</h3>
+                <p>Servicii profesionale realizate cu echipamente moderne și grijă deosebită.</p>
+                <a href="#" class="service-link">Află Detalii <i class="fa-regular fa-square-check"></i></a>
+            </div>
+
+            <div class="service-card highlight">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-sink"></i>
+                </div>
+                <h3>Reparații & Montaj Chiuvete</h3>
+                <p>Servicii profesionale realizate cu echipamente moderne și grijă deosebită.</p>
+                <a href="#" class="service-link">Află Detalii <i class="fa-regular fa-square-check"></i></a>
+            </div>
+
+            <div class="service-card">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-wrench"></i>
+                </div>
+                <h3>Detectare & Reparat Scurgeri</h3>
+                <p>Servicii profesionale realizate cu echipamente moderne și grijă deosebită.</p>
+                <a href="#" class="service-link">Află Detalii <i class="fa-regular fa-square-check"></i></a>
+            </div>
+
+            <div class="service-card highlight">
+                <div class="icon-circle">
+                    <i class="fa-solid fa-faucet"></i>
+                </div>
+                <h3>Montaj Sisteme Sanitare</h3>
+                <p>Servicii profesionale realizate cu echipamente moderne și grijă deosebită.</p>
+                <a href="#" class="service-link">Află Detalii <i class="fa-regular fa-square-check"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secțiunea Galerie Before / After -->
+    <section class="gallery-section" id="galerie">
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <span class="badge badge-before">Înainte</span>
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop"
+                    alt="Înainte">
+            </div>
+            <div class="gallery-item">
+                <span class="badge badge-after">După</span>
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop"
+                    alt="După">
+            </div>
+        </div>
+    </section>
+
+    <!-- Secțiunea FAQ -->
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+            <div class="faq-info">
+                <span class="section-badge">Întrebări Frecvente</span>
+                <h2>Întrebări adresate frecvent...</h2>
+                <p>Comunicare transparentă și planificare eficientă pentru ca proiectul tău să fie finalizat la timp și
+                    fără stres.</p>
+                <a href="#programeaza" class="btn-blue">
+                    Programează o Vizită <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+
+            <div class="faq-list">
+                <details open class="faq-item" name="faq-accordion">
+                    <summary>
+                        <span>Oferiți servicii de urgență pentru instalații?</span>
+                        <i class="fa-solid fa-minus icon-toggle"></i>
+                    </summary>
+                    <p>Da, oferim servicii de urgență 24/7 pentru scurgeri, țevi sparte, scurgeri înfundate și alte
+                        probleme urgente, cu timp rapid de intervenție.</p>
+                </details>
+
+                <details class="faq-item" name="faq-accordion">
+                    <summary>
+                        <span>În cât timp ajungeți după o solicitare?</span>
+                        <i class="fa-solid fa-plus icon-toggle"></i>
+                    </summary>
+                    <p>Echipa noastră se deplasează în medie în 30 - 60 de minute pentru intervențiile urgente în oraș.
+                    </p>
+                </details>
+
+                <details class="faq-item" name="faq-accordion">
+                    <summary>
+                        <span>Instalatorii voștri sunt autorizați și asigurați?</span>
+                        <i class="fa-solid fa-plus icon-toggle"></i>
+                    </summary>
+                    <p>Da, toți tehnicienii noștri dețin autorizații ANRE/Iscir valabile și asigurare de răspundere
+                        profesională.</p>
+                </details>
+
+                <details class="faq-item" name="faq-accordion">
+                    <summary>
+                        <span>Ce tipuri de servicii sanitare acoperiți?</span>
+                        <i class="fa-solid fa-plus icon-toggle"></i>
+                    </summary>
+                    <p>Acoperim totul: de la schimbat robineți și desfundări până la rețele complete de apă, canalizare
+                        și centrale termice.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section class="mega-contact-section" id="contact">
+        <div class="mega-contact-container">
+            <span class="mega-badge"><i class="fa-solid fa-clock"></i> DISPONIBIL NON-STOP 24/7</span>
+            <h2>Ai o avarie sau o lucrare urgentă?</h2>
+            <p>Suntem pregătiți să intervenim în maxim 30-60 de minute în tot județul Ilfov și sectoarele 1-6.</p>
+
+            <div class="mega-btn-group">
+                <a href="tel:+40712345678" class="btn-mega-call">
+                    <i class="fa-solid fa-phone-volume icon-pulse"></i>
+                    <div class="mega-call-text">
+                        <span>SUNĂ ACUM PENTRU INTERVENȚIE</span>
+                        <strong>+40 712 345 678</strong>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/40712345678" class="btn-mega-wa" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Mesaj WhatsApp Rapid
+                </a>
+            </div>
+        </div>
+
+        <!-- Ticker Sub Contact -->
+        <div class="info-ticker">
+            <div class="ticker-item"><i class="fa-solid fa-bolt"></i> LUNI - VINERI: 09:00 - 18:00 | SÂMBĂTĂ: 09:00 -
+                16:00</div>
+            <div class="ticker-item"><i class="fa-solid fa-bolt"></i> BUCUREȘTI - STR. PRINCIPALĂ NR. 12</div>
+            <div class="ticker-item"><i class="fa-solid fa-bolt"></i> CONTACT - TELEFON: +40 712 345 678</div>
+            <div class="ticker-item"><i class="fa-solid fa-bolt"></i> DUMINICĂ: ÎNCHIS</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <a href="index.html" class="logo footer-logo">
+                <i class="fa-solid fa-faucet-drip text-blue"></i>
+                <span>PlumbExpert</span>
+            </a>
+            <p>Managementul instalațiilor sanitare include o gamă largă de activități și soluții moderne adaptate locuinței tale.</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Serviciile Noastre</h3>
+            <ul>
+                <li><a href="servicii.html">Țevi & Sisteme de Apă</a></li>
+                <li><a href="servicii.html">Reparații & Montaj Chiuvete</a></li>
+                <li><a href="servicii.html">Detectare & Reparat Scurgeri</a></li>
+                <li><a href="servicii.html">Montaj Sisteme Sanitare</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Informații Legale</h3>
+            <ul>
+                <li><a href="#">Termeni și Condiții</a></li>
+                <li><a href="#">Politica de Confidențialitate</a></li>
+                <li><a href="#">Politica de Cookie-uri</a></li>
+                <li><a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="nofollow">ANPC - SAL</a></li>
+                <li><a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="nofollow">ANPC - SOL</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Informații Contact</h3>
+            <p>Str. Principală nr. 12, București</p>
+            <p>+40 712 345 678</p>
+            <p>contact@plumbexpert.ro</p>
+            <p>Program: 08:00 - 23:00</p>
+            <p>Duminică - Închis</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright © 2026 PlumbExpert. Toate drepturile rezervate. | Site creat de <a href="https://amnevoiede.site" target="_blank" style="color: var(--accent-blue); text-decoration: none; font-weight: 700;">amnevoiede.site</a></p>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            item.addEventListener('toggle', () => {
+                if (item.open) {
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.removeAttribute('open');
+                            const icon = otherItem.querySelector('.icon-toggle');
+                            if (icon) {
+                                icon.classList.remove('fa-minus');
+                                icon.classList.add('fa-plus');
+                            }
+                        }
+                    });
+                    const icon = item.querySelector('.icon-toggle');
+                    if (icon) {
+                        icon.classList.remove('fa-plus');
+                        icon.classList.add('fa-minus');
+                    }
+                } else {
+                    const icon = item.querySelector('.icon-toggle');
+                    if (icon) {
+                        icon.classList.remove('fa-minus');
+                        icon.classList.add('fa-plus');
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
